@@ -1,38 +1,62 @@
-.App {
+.hangerManGame {
+  text-align: center;
+  margin-left: 5em;
+  margin-right: 5em;
+  height: 100%;
+}
+
+.displayLetter {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: monospace;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  margin: 0.2em;
+  border: 1px solid black;
+  border-radius: 0.2em;
+  background-color: #ff87ca;
+}
+
+.hangermanImageContainer {
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hangermanImg {
+  background-color: #ffc4e1;
+  object-fit: cover;
+  width: 40em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.keyboardRow {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.inputLetterContainer {
+  width: 1.9em;
+  height: 1.9em;
+  line-height: 1.9em;
+  background-color: #ffa39e;
+  border-color: #820014;
+  border-radius: 50%;
+  font-size: 2.7em;
+  font-weight: bold;
+  font-family: monospace;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.disabledLetterContainer{
+  width: 1.9em;
+  height: 1.9em;
+  line-height: 1.9em;
+  background-color: #a79a9a;
+  border-color: #4d4d4d;
+  color: black;
+  border-radius: 50%;
+  font-size: 2.7em;
+  font-weight: bold;
+  font-family: monospace;
 }
