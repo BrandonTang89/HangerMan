@@ -29,12 +29,21 @@
   width: 40em;
 }
 
+.keyboardContainer{
+  border: 1px solid silver;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
 .keyboardRow {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  margin: 0;
   margin-top: 1em;
   height: 5em;
+  list-style: none;
 }
 
 .inputLetter {
@@ -49,6 +58,7 @@
   font-weight: bold;
   font-family: monospace;
   margin: 0 auto;
+  
 }
 
 .disabledLetter {

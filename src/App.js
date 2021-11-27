@@ -96,7 +96,7 @@ function App() {
     for (let j = 0; j < 3; j++) {
       for (let i = keys_before[j]; i < keys_before[j] + keys_per_row[j]; i++) {
         keysJSX[j].push(
-          <div
+          <li
             onClick={() => handleLetterGuess(alphabets[i])}
             className="inputLetterContainer"
             key={alphabets[i]}
@@ -106,20 +106,20 @@ function App() {
               guesses={guesses}
               key={alphabets[i]}
             />
-          </div>
+          </li>
         );
       }
     }
 
     keyboardJSX.push(
-      <div className="keyboardRow" key="firstrow">
+      <ul className="keyboardRow" key="firstrow">
         {keysJSX[0].map((key, index) => (
           <div key={index}>{key}</div>
         ))}
-      </div>
+      </ul>
     );
     keyboardJSX.push(
-      <div
+      <ul
         className="keyboardRow"
         style={{ paddingLeft: "5em", paddingRight: "10em" }}
         key="secondrow"
@@ -127,10 +127,10 @@ function App() {
         {keysJSX[1].map((key, index) => (
           <div key={index}>{key}</div>
         ))}
-      </div>
+      </ul>
     );
     keyboardJSX.push(
-      <div
+      <ul
         className="keyboardRow"
         style={{ paddingLeft: "10em", paddingRight: "30em" }}
         key="thirdrow"
@@ -138,9 +138,14 @@ function App() {
         {keysJSX[2].map((key, index) => (
           <div key={index}>{key}</div>
         ))}
-      </div>
+      </ul>
     );
 
+    keyboardJSX = [
+      <div>
+        {keyboardJSX}
+      </div>,
+    ];
     return keyboardJSX;
   }
 
@@ -210,7 +215,7 @@ function App() {
 
   /* ========================================== RENDER ========================================== */
   return (
-    <div style={{ backgroundColor: "#fff1f0", height: "100%" }}>
+    <div style={{ backgroundColor: "#fff1f0"}}>
       <div className="hangerManGame">
         <br />
         <Title>Hanger Man</Title>
@@ -239,7 +244,7 @@ function App() {
 function ProgressBar(props) {
   return (
     <div
-      style={{ display: "flex", justifyContent: "center", marginTop: "3em" }}
+      style={{ display: "flex", justifyContent: "center", marginTop: "1.5em" }}
     >
       <div style={{ width: "70%" }}>
         <div>
