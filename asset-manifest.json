@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/HangerMan/static/css/main.7ad8062e.chunk.css",
-    "main.js": "/HangerMan/static/js/main.97f570e2.chunk.js",
-    "main.js.map": "/HangerMan/static/js/main.97f570e2.chunk.js.map",
+    "main.js": "/HangerMan/static/js/main.9d761a27.chunk.js",
+    "main.js.map": "/HangerMan/static/js/main.9d761a27.chunk.js.map",
     "runtime-main.js": "/HangerMan/static/js/runtime-main.ee3c1d7d.js",
     "runtime-main.js.map": "/HangerMan/static/js/runtime-main.ee3c1d7d.js.map",
     "static/css/2.b419ad3c.chunk.css": "/HangerMan/static/css/2.b419ad3c.chunk.css",
@@ -12,20 +12,20 @@
     "static/css/2.b419ad3c.chunk.css.map": "/HangerMan/static/css/2.b419ad3c.chunk.css.map",
     "static/css/main.7ad8062e.chunk.css.map": "/HangerMan/static/css/main.7ad8062e.chunk.css.map",
     "static/js/2.9a8a32b6.chunk.js.LICENSE.txt": "/HangerMan/static/js/2.9a8a32b6.chunk.js.LICENSE.txt",
-    "static/media/0.a98e8366.svg": "/HangerMan/static/media/0.a98e8366.svg",
-    "static/media/1.c79cdb29.svg": "/HangerMan/static/media/1.c79cdb29.svg",
-    "static/media/2.5a3cf98c.svg": "/HangerMan/static/media/2.5a3cf98c.svg",
-    "static/media/3.35e7403c.svg": "/HangerMan/static/media/3.35e7403c.svg",
-    "static/media/4.46372f71.svg": "/HangerMan/static/media/4.46372f71.svg",
-    "static/media/5.aa2f2aea.svg": "/HangerMan/static/media/5.aa2f2aea.svg",
-    "static/media/6.52186987.svg": "/HangerMan/static/media/6.52186987.svg",
-    "static/media/7.78b09b38.svg": "/HangerMan/static/media/7.78b09b38.svg"
+    "static/media/0.f745f5f5.svg": "/HangerMan/static/media/0.f745f5f5.svg",
+    "static/media/1.7a287899.svg": "/HangerMan/static/media/1.7a287899.svg",
+    "static/media/2.71d04720.svg": "/HangerMan/static/media/2.71d04720.svg",
+    "static/media/3.1c617887.svg": "/HangerMan/static/media/3.1c617887.svg",
+    "static/media/4.81b7a900.svg": "/HangerMan/static/media/4.81b7a900.svg",
+    "static/media/5.38635650.svg": "/HangerMan/static/media/5.38635650.svg",
+    "static/media/6.d72d3161.svg": "/HangerMan/static/media/6.d72d3161.svg",
+    "static/media/7.fcd49dfe.svg": "/HangerMan/static/media/7.fcd49dfe.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ee3c1d7d.js",
     "static/css/2.b419ad3c.chunk.css",
     "static/js/2.9a8a32b6.chunk.js",
     "static/css/main.7ad8062e.chunk.css",
-    "static/js/main.97f570e2.chunk.js"
+    "static/js/main.9d761a27.chunk.js"
   ]
 }
