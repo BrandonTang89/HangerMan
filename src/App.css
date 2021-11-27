@@ -21,6 +21,7 @@
 .hangermanImageContainer {
   width: 100%;
   text-align: center;
+  padding-bottom: 1em;
 }
 
 .hangermanImg {
@@ -29,11 +30,6 @@
   width: 40em;
 }
 
-.keyboardContainer{
-  border: 1px solid silver;
-  padding-bottom: 2em;
-  margin-bottom: 2em;
-}
 .keyboardRow {
   width: 100%;
   display: flex;
@@ -90,4 +86,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.ant-select-item-option-content {
+  white-space: break-spaces;
+  word-break: break-word;
 }

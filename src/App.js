@@ -52,17 +52,18 @@ function App() {
   for (let key in dictionary) {
     categories.push(key);
   }
+  categories.sort();
   var categoriesJSX = [];
   for (let i = 0; i < categories.length; i++) {
     categoriesJSX.push(
       <Option key={categories[i]} value={categories[i]}>
-        {categories[i]}{" "}
+        {categories[i]} ({dictionary[categories[i]].length} words)
       </Option>
     );
   }
   categoriesJSX = [
     <Select
-      style={{ width: 120 }}
+      style={{ width: 200 }}
       onChange={handleCategoryChange}
       size="large"
       defaultValue="animals"
@@ -141,11 +142,7 @@ function App() {
       </ul>
     );
 
-    keyboardJSX = [
-      <div>
-        {keyboardJSX}
-      </div>,
-    ];
+    keyboardJSX = [<div>{keyboardJSX}</div>];
     return keyboardJSX;
   }
 
@@ -215,12 +212,11 @@ function App() {
 
   /* ========================================== RENDER ========================================== */
   return (
-    <div style={{ backgroundColor: "#fff1f0"}}>
+    <div style={{ backgroundColor: "#fff1f0" }}>
       <div className="hangerManGame">
         <br />
         <Title>Hanger Man</Title>
         <Divider />
-        <DisplayWord word={word} guesses={guesses} />
 
         <Title level={2}>Category: {categoriesJSX}</Title>
         <div className="hangermanImageContainer">
@@ -229,11 +225,13 @@ function App() {
             alt="Hanger"
             className="hangermanImg"
           />
-
-          <ProgressBar wrongGuesses={wrongGuesses} />
-          <Divider style={{ fontSize: "2em" }}> Guess Letters </Divider>
-          <div style={{ width: "100%" }}>{generateKeyboard()}</div>
         </div>
+
+        <DisplayWord word={word} guesses={guesses} />
+
+        <ProgressBar wrongGuesses={wrongGuesses} />
+        <Divider style={{ fontSize: "2em" }}> Guess Letters </Divider>
+        <div style={{ width: "100%" }}>{generateKeyboard()}</div>
       </div>
     </div>
   );
@@ -305,7 +303,7 @@ function DisplayWord(props) {
     lettersJSX.push(<DisplayLetter key={i} letter={letter} />);
   }
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <div style={{ display: "flex", justifyContent: "center", flexWrap:"wrap" }}>
       {lettersJSX}
     </div>
   );
