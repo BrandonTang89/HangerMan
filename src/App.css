@@ -34,21 +34,24 @@
   flex-direction: row;
   justify-content: space-around;
   margin-top: 1em;
+  height: 5em;
 }
 
-.inputLetterContainer {
+.inputLetter {
   width: 1.9em;
   height: 1.9em;
   line-height: 1.9em;
   background-color: #ffa39e;
-  border-color: #820014;
+  border-color: #000000;
   border-radius: 50%;
+  border-width: medium;
   font-size: 2.7em;
   font-weight: bold;
   font-family: monospace;
+  margin: 0 auto;
 }
 
-.disabledLetterContainer{
+.disabledLetter {
   width: 1.9em;
   height: 1.9em;
   line-height: 1.9em;
@@ -59,4 +62,22 @@
   font-size: 2.7em;
   font-weight: bold;
   font-family: monospace;
+  margin: 0 auto;
+}
+
+.inputLetter:hover {
+  background-color: #fd7575;
+  border-color: #820014;
+  color: black;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+}
+
+.inputLetterContainer {
+  width: 6em;
+  height: 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
